@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Classifier</title>
+
+</head>
+<body>
+
+<h1 id="hd"> Polarity of your Tweet</h1>
+<div class="form">
+ <form  #requestForm = "ngForm" (ngSubmit)="GetPolarity(requestForm)">
+     <span>Enter you text</span><br>
+
+     <textarea  [(ngModel)] = 'req.text' id="txt" name="txt" rows="4" cols="50" ></textarea><br>
+      <input type="submit" id="btn" value="submit">
+    </form>
+
+</div>
+</body>
+</html>
